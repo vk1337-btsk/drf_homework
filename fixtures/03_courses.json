@@ -1,0 +1,29 @@
+[
+  {
+    "model": "materials.course",
+    "pk": 1,
+    "fields": {
+      "title": "Математика",
+      "description": "Курс по Математике",
+      "preview": "materials/courses/preview_courses_default.jpg"
+    }
+  },
+  {
+    "model": "materials.course",
+    "pk": 2,
+    "fields": {
+      "title": "Информатика",
+      "description": "Курс по Информатике",
+      "preview": "materials/courses/preview_courses_default.jpg"
+    }
+  },
+  {
+    "model": "materials.course",
+    "pk": 3,
+    "fields": {
+      "title": "Химия",
+      "description": "Курс по Химии",
+      "preview": "materials/courses/preview_courses_default.jpg"
+    }
+  }
+]

@@ -1,0 +1,101 @@
+[
+  {
+    "model": "materials.lesson",
+    "pk": 1,
+    "fields": {
+      "title": "Дроби",
+      "description": "Тема урока - дроби",
+      "preview": "materials/lessons/preview_lesson_default.jpg",
+      "url": null,
+      "course": 1
+    }
+  },
+  {
+    "model": "materials.lesson",
+    "pk": 2,
+    "fields": {
+      "title": "Компьютер",
+      "description": "Что такое компьютер?",
+      "preview": "materials/lessons/preview_lesson_default.jpg",
+      "url": null,
+      "course": 2
+    }
+  },
+  {
+    "model": "materials.lesson",
+    "pk": 3,
+    "fields": {
+      "title": "Таблица Менделеева",
+      "description": "Что такое Таблица Менделеева?",
+      "preview": "materials/lessons/preview_lesson_default.jpg",
+      "url": null,
+      "course": 3
+    }
+  },
+  {
+    "model": "materials.lesson",
+    "pk": 4,
+    "fields": {
+      "title": "Интегралы",
+      "description": "Что такое Интегралы?",
+      "preview": "materials/lessons/preview_lesson_default.jpg",
+      "url": null,
+      "course": 1
+    }
+  },
+  {
+    "model": "materials.lesson",
+    "pk": 5,
+    "fields": {
+      "title": "Устройство компьютера",
+      "description": "Как устроен компьютер?",
+      "preview": "materials/lessons/preview_lesson_default.jpg",
+      "url": null,
+      "course": 2
+    }
+  },
+  {
+    "model": "materials.lesson",
+    "pk": 6,
+    "fields": {
+      "title": "Виды связей химических веществ",
+      "description": "Какие бывают виды связей химических веществ?",
+      "preview": "materials/lessons/preview_lesson_default.jpg",
+      "url": null,
+      "course": 3
+    }
+  },
+  {
+    "model": "materials.lesson",
+    "pk": 7,
+    "fields": {
+      "title": "Производные",
+      "description": "Что такое производные?",
+      "preview": "materials/lessons/preview_lesson_default.jpg",
+      "url": null,
+      "course": 1
+    }
+  },
+  {
+    "model": "materials.lesson",
+    "pk": 8,
+    "fields": {
+      "title": "Как работает компьютерная мышь?",
+      "description": "Как работает компьютерная мышь?",
+      "preview": "materials/lessons/preview_lesson_default.jpg",
+      "url": null,
+      "course": 2
+    }
+  },
+  {
+    "model": "materials.lesson",
+    "pk": 9,
+    "fields": {
+      "title": "Оксиды, кислоты и основания.",
+      "description": "Оксиды, кислоты и основания. Что это?",
+      "preview": "materials/lessons/preview_lesson_default.jpg",
+      "url": null,
+      "course": 3
+    }
+  }
+]

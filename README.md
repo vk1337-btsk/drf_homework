@@ -93,3 +93,11 @@ pip install -r requirements.txt
   ```text
   python manage.py migrate
   ```
+  
+## Использование
+
+- Для запуска проекта наберите в терминале команду:
+  ```text
+  python manage.py runserver
+  ```
+  перейдите по адресу: [http://127.0.0.1:8000](http://127.0.0.1:8000)
