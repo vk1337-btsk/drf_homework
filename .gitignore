@@ -1,0 +1,9 @@
+# Python and etc
+.venv/
+.idea/
+__pycache__/
+poetry.lock
+
+# Private data
+config.ini
+
