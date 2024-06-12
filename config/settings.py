@@ -1,5 +1,6 @@
 import configparser
 import os.path
+from datetime import timedelta
 from pathlib import Path
 
 # Getting data from the config.ini file
@@ -26,6 +27,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
 
+    'rest_framework_simplejwt',
     'rest_framework',
     'django_filters',
     'apps.users',
@@ -98,3 +100,18 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 # Users
 AUTH_USER_MODEL = 'users.Users'
+
+# Settings Rest Framework
+REST_FRAMEWORK = {
+    'DEFAULT_AUTHENTICATION_CLASSES': (
+        'rest_framework_simplejwt.authentication.JWTAuthentication',
+    ),
+    'DEFAULT_PERMISSION_CLASSES': [
+        'rest_framework.permissions.IsAuthenticated',
+    ]
+}
+
+SIMPLE_JWT = {
+    "ACCESS_TOKEN_LIFETIME": timedelta(minutes=15),
+    "REFRESH_TOKEN_LIFETIME": timedelta(days=1),
+}

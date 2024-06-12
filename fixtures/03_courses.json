@@ -5,7 +5,8 @@
     "fields": {
       "title": "Математика",
       "description": "Курс по Математике",
-      "preview": "materials/courses/preview_courses_default.jpg"
+      "preview": "materials/courses/preview_courses_default.jpg",
+      "owner": 1
     }
   },
   {
@@ -14,7 +15,8 @@
     "fields": {
       "title": "Информатика",
       "description": "Курс по Информатике",
-      "preview": "materials/courses/preview_courses_default.jpg"
+      "preview": "materials/courses/preview_courses_default.jpg",
+      "owner": 2
     }
   },
   {
@@ -23,7 +25,8 @@
     "fields": {
       "title": "Химия",
       "description": "Курс по Химии",
-      "preview": "materials/courses/preview_courses_default.jpg"
+      "preview": "materials/courses/preview_courses_default.jpg",
+      "owner": 3
     }
   }
 ]

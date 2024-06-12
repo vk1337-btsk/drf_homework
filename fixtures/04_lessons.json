@@ -7,7 +7,8 @@
       "description": "Тема урока - дроби",
       "preview": "materials/lessons/preview_lesson_default.jpg",
       "url": null,
-      "course": 1
+      "course": 1,
+      "owner": 1
     }
   },
   {
@@ -18,7 +19,8 @@
       "description": "Что такое компьютер?",
       "preview": "materials/lessons/preview_lesson_default.jpg",
       "url": null,
-      "course": 2
+      "course": 2,
+      "owner": 2
     }
   },
   {
@@ -29,7 +31,8 @@
       "description": "Что такое Таблица Менделеева?",
       "preview": "materials/lessons/preview_lesson_default.jpg",
       "url": null,
-      "course": 3
+      "course": 3,
+      "owner": 3
     }
   },
   {
@@ -40,7 +43,8 @@
       "description": "Что такое Интегралы?",
       "preview": "materials/lessons/preview_lesson_default.jpg",
       "url": null,
-      "course": 1
+      "course": 1,
+      "owner": 1
     }
   },
   {
@@ -51,7 +55,8 @@
       "description": "Как устроен компьютер?",
       "preview": "materials/lessons/preview_lesson_default.jpg",
       "url": null,
-      "course": 2
+      "course": 2,
+      "owner": 2
     }
   },
   {
@@ -62,7 +67,8 @@
       "description": "Какие бывают виды связей химических веществ?",
       "preview": "materials/lessons/preview_lesson_default.jpg",
       "url": null,
-      "course": 3
+      "course": 3,
+      "owner": 3
     }
   },
   {
@@ -73,7 +79,8 @@
       "description": "Что такое производные?",
       "preview": "materials/lessons/preview_lesson_default.jpg",
       "url": null,
-      "course": 1
+      "course": 1,
+      "owner": 1
     }
   },
   {
@@ -84,7 +91,8 @@
       "description": "Как работает компьютерная мышь?",
       "preview": "materials/lessons/preview_lesson_default.jpg",
       "url": null,
-      "course": 2
+      "course": 2,
+      "owner": 2
     }
   },
   {
@@ -95,7 +103,8 @@
       "description": "Оксиды, кислоты и основания. Что это?",
       "preview": "materials/lessons/preview_lesson_default.jpg",
       "url": null,
-      "course": 3
+      "course": 3,
+      "owner": 3
     }
   }
 ]

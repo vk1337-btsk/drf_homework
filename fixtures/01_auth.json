@@ -322,5 +322,18 @@
       "content_type": 9,
       "codename": "view_lesson"
     }
+  },
+  {
+    "model": "auth.group",
+    "pk": 1,
+    "fields": {
+      "name": "moderator",
+      "permissions": [
+        30,
+        32,
+        34,
+        36
+      ]
+    }
   }
 ]
