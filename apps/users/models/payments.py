@@ -1,36 +1,10 @@
-import uuid
-
-from django.contrib.auth.models import AbstractUser
 from django.db import models
-from apps.materials.models import Course, Lesson
 from django.utils.translation import gettext as _
 
+from apps.materials.models import Course, Lesson
+from apps.users.models.users import Users
 
 NULLABLE = {"blank": True, "null": True}
-
-
-class Users(AbstractUser):
-    username = models.CharField(max_length=150, unique=True, default=uuid.uuid4)
-
-    email = models.EmailField(unique=True, verbose_name='Email')
-    first_name = models.CharField(max_length=50, verbose_name='Имя')
-    last_name = models.CharField(max_length=50, verbose_name='Фамилия')
-    phone = models.CharField(max_length=35, **NULLABLE, verbose_name='Телефон')
-    city = models.CharField(max_length=100, **NULLABLE, verbose_name='Город')
-    avatar = models.ImageField(upload_to='users/avatar/', default='users/avatar/avatar_default.png',
-                               verbose_name='Аватарка')
-
-    USERNAME_FIELD = 'email'
-    REQUIRED_FIELDS = []
-
-    def __str__(self):
-        return f'{self.email}'
-
-    class Meta:
-        verbose_name = 'Пользователь'
-        verbose_name_plural = 'Пользователи'
-        db_table = '_us_users'
-        ordering = ['email']
 
 
 class Payments(models.Model):
@@ -54,4 +28,4 @@ class Payments(models.Model):
         verbose_name = 'платеж'
         verbose_name_plural = 'платежи'
         db_table = '_us_payments'
-        ordering = ['-payment_date',]
+        ordering = ['-payment_date', ]

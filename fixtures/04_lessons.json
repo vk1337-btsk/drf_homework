@@ -6,7 +6,7 @@
       "title": "Дроби",
       "description": "Тема урока - дроби",
       "preview": "materials/lessons/preview_lesson_default.jpg",
-      "url": null,
+      "url": "https://youtube.com/watch_video_lesson",
       "course": 1,
       "owner": 1
     }
@@ -18,7 +18,7 @@
       "title": "Компьютер",
       "description": "Что такое компьютер?",
       "preview": "materials/lessons/preview_lesson_default.jpg",
-      "url": null,
+      "url": "https://youtube.com/watch_video_lesson",
       "course": 2,
       "owner": 2
     }
@@ -30,7 +30,7 @@
       "title": "Таблица Менделеева",
       "description": "Что такое Таблица Менделеева?",
       "preview": "materials/lessons/preview_lesson_default.jpg",
-      "url": null,
+      "url": "https://youtube.com/watch_video_lesson",
       "course": 3,
       "owner": 3
     }
@@ -42,7 +42,7 @@
       "title": "Интегралы",
       "description": "Что такое Интегралы?",
       "preview": "materials/lessons/preview_lesson_default.jpg",
-      "url": null,
+      "url": "https://youtube.com/watch_video_lesson",
       "course": 1,
       "owner": 1
     }
@@ -54,7 +54,7 @@
       "title": "Устройство компьютера",
       "description": "Как устроен компьютер?",
       "preview": "materials/lessons/preview_lesson_default.jpg",
-      "url": null,
+      "url": "https://youtube.com/watch_video_lesson",
       "course": 2,
       "owner": 2
     }
@@ -66,7 +66,7 @@
       "title": "Виды связей химических веществ",
       "description": "Какие бывают виды связей химических веществ?",
       "preview": "materials/lessons/preview_lesson_default.jpg",
-      "url": null,
+      "url": "https://youtube.com/watch_video_lesson",
       "course": 3,
       "owner": 3
     }
@@ -78,7 +78,7 @@
       "title": "Производные",
       "description": "Что такое производные?",
       "preview": "materials/lessons/preview_lesson_default.jpg",
-      "url": null,
+      "url": "https://youtube.com/watch_video_lesson",
       "course": 1,
       "owner": 1
     }
@@ -90,7 +90,7 @@
       "title": "Как работает компьютерная мышь?",
       "description": "Как работает компьютерная мышь?",
       "preview": "materials/lessons/preview_lesson_default.jpg",
-      "url": null,
+      "url": "https://youtube.com/watch_video_lesson",
       "course": 2,
       "owner": 2
     }
@@ -102,7 +102,7 @@
       "title": "Оксиды, кислоты и основания.",
       "description": "Оксиды, кислоты и основания. Что это?",
       "preview": "materials/lessons/preview_lesson_default.jpg",
-      "url": null,
+      "url": "https://youtube.com/watch_video_lesson",
       "course": 3,
       "owner": 3
     }

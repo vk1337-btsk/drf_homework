@@ -1,12 +1,14 @@
 from django_filters.rest_framework import DjangoFilterBackend
-
-from rest_framework.filters import OrderingFilter
-from apps.users.models import Users, Payments
-from apps.users.permissions import IsOwnerOrReadOnly
-from apps.users.serializers import UserSerializer, PaymentsSerializer, UserDetailSerializer, UserRegisterSerializer, \
-    UserNotOwnerSerializer
 from rest_framework import generics
+from rest_framework.filters import OrderingFilter
 from rest_framework.permissions import AllowAny
+
+from apps.users.models.payments import Payments
+from apps.users.models.users import Users
+from apps.users.permissions import IsOwnerOrReadOnly
+from apps.users.serializers.users import UserSerializer, UserDetailSerializer, UserRegisterSerializer, \
+    UserNotOwnerSerializer
+from apps.users.serializers.payments import PaymentsSerializer
 
 
 class UserCreateAPIView(generics.CreateAPIView):

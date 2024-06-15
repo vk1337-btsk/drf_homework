@@ -1,6 +1,7 @@
 from django.contrib import admin
 
-from apps.users.models import Users, Payments
+from apps.users.models.users import Users
+from apps.users.models.payments import Payments
 
 
 @admin.register(Users)
@@ -15,4 +16,3 @@ class PaymentsAdmin(admin.ModelAdmin):
     list_display = ('id', 'user', 'payment_date', 'payment_amount', 'payment_method',)
     list_filter = ('paid_course', 'paid_lesson', 'payment_method',)
     search_fields = ('user',)
-    
