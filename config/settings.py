@@ -11,10 +11,10 @@ config.read('config.ini', encoding='UTF-8')
 BASE_DIR = Path(__file__).resolve().parent.parent
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = fr'{config['django_settings']['SECRET_KEY']}'
+SECRET_KEY = fr"{config['django_settings']['SECRET_KEY']}"
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = fr'{config['django_settings']['DEBUG']}' == 'True'
+DEBUG = fr"{config['django_settings']['DEBUG']}" == 'True'
 
 ALLOWED_HOSTS = []
 
@@ -27,6 +27,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
 
+    'corsheaders',
+    'drf_yasg',
     'rest_framework_simplejwt',
     'rest_framework',
     'django_filters',
@@ -42,6 +44,8 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'corsheaders.middleware.CorsMiddleware',
+
 ]
 
 ROOT_URLCONF = 'config.urls'
@@ -67,7 +71,7 @@ WSGI_APPLICATION = 'config.wsgi.application'
 # Database
 DATABASES = {
     'default': {
-        'ENGINE': fr'django.db.backends.{config['database']['DB_ENGINE']}',
+        'ENGINE': fr"django.db.backends.{config['database']['DB_ENGINE']}",
         'NAME': config['database']['DB_NAME'],
         'USER': config['database']['DB_USER'],
         'PASSWORD': config['database']['DB_PASSWORD'],
@@ -115,3 +119,18 @@ SIMPLE_JWT = {
     "ACCESS_TOKEN_LIFETIME": timedelta(minutes=15),
     "REFRESH_TOKEN_LIFETIME": timedelta(days=1),
 }
+
+CORS_ALLOWED_ORIGINS = [
+    'http://localhost:8000',  # Замените на адрес вашего фронтенд-сервера
+]
+
+CSRF_TRUSTED_ORIGINS = [
+    "https://read-and-write.example.com", #  Замените на адрес вашего фронтенд-сервера
+    # и добавьте адрес бэкенд-сервера
+]
+
+CORS_ALLOW_ALL_ORIGINS = False
+
+
+STRIPE_API_KEY = config['stripe']['STRIPE_API_KEY']
+
