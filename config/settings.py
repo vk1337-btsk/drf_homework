@@ -27,6 +27,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
 
+    'django_celery_beat',
     'corsheaders',
     'drf_yasg',
     'rest_framework_simplejwt',
@@ -134,3 +135,30 @@ CORS_ALLOW_ALL_ORIGINS = False
 
 STRIPE_API_KEY = config['stripe']['STRIPE_API_KEY']
 
+# Email
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+EMAIL_HOST = 'smtp.yandex.ru'
+EMAIL_PORT = 465
+EMAIL_USE_SSL = True
+
+EMAIL_HOST_USER = config['data_email_yandex']['email_host_user']
+EMAIL_HOST_PASSWORD = config['data_email_yandex']['email_host_password']
+
+DEFAULT_FROM_EMAIL = EMAIL_HOST_USER
+SERVER_EMAIL = EMAIL_HOST_USER
+EMAIL_ADMIN = EMAIL_HOST_USER
+
+# Celery
+CELERY_BROKER_URL = config['redis']['CELERY_BROKER_URL']
+CELERY_RESULT_BACKEND = config['redis']['CELERY_RESULT_BACKEND']
+
+CELERY_TIMEZONE = TIME_ZONE
+CELERY_TASK_TRACK_STARTED = True
+CELERY_TASK_TIME_LIMIT = 30 * 60
+
+CELERY_BEAT_SCHEDULE = {
+    'task-name': {
+        'task': 'users.tasks.check_user_activity',
+        'schedule': timedelta(days=1),
+    },
+}

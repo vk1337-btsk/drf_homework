@@ -13,3 +13,11 @@ DB_PORT = 5432
 
 [stripe]
 STRIPE_API_KEY = your_stripe_api_key
+
+[data_email_yandex]
+email_host_user = your_email_host_user
+email_host_password = your_email_host_password
+
+[redis]
+CELERY_BROKER_URL = your_CELERY_BROKER_URL
+CELERY_RESULT_BACKEND = your_CELERY_RESULT_BACKEND
